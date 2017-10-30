@@ -1,0 +1,6 @@
+1,Honda,Civic,2018,21.45
+2,Honda, civic, 2017,20000
+3,lexus, RX350, 2019,134000
+4,HONDA, civic, 2017,20000
+5,lexus, RX350, 2016,34000
+6,honda, civic, 2017,20000

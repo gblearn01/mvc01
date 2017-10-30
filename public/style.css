@@ -1,0 +1,31 @@
+nav{
+    background:deepskyblue;
+    color:white;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+nav li a:visited, nav li a:link{
+    color:white;
+    text-decoration: none;
+}
+
+li:hover{
+    background: deepskyblue;
+    border-radius: 10px;
+}
+
+#container{
+    border: 1px solid darkgrey;
+    width:800px;
+    margin:5px auto;
+    min-height: 600px;
+}
+
+.active{
+    background-color:forestgreen;
+    border-radius: 10px;
+}

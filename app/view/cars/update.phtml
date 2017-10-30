@@ -1,0 +1,15 @@
+<h1>Update Car</h1>
+<?php if(is_array($car_to_update)):?>
+<form action="/?page=cars&action=doUpdate" method="post">
+    Make:<input type="text" name="make" value="<?php echo $car_to_update[1];?>">
+    Model:<input type="text" name="model" value="<?php echo $car_to_update[2];?>"><br>
+    Year:<input type="text" name="year" value="<?php echo $car_to_update[3];?>"><br>
+    Price:<input type="text" name="price" value="<?php echo $car_to_update[4];?>"><br>
+    <input type="hidden" name="id" value="<?php echo $car_to_update[0];?>">
+    <input type="submit">
+</form>
+<?php else:?>
+    <h1>Cannot find the car</h1>
+<?php endif; ?>
+
+

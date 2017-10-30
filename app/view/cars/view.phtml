@@ -1,0 +1,15 @@
+<h1>View Car</h1>
+<table class="table table-hover">
+    <?php
+    foreach ($cars as $car) {
+        $car_fileds = explode(',',$car);
+        echo '<tr>';
+        foreach ($car_fileds as $filed) {
+            echo '<td>' . $filed . '</td>';
+        }
+        echo '<td><a href="?page=cars&action=delete&id=' . $car_fileds[0] . '">Delete</td>';
+        echo '<td><a href="?page=cars&action=update&id=' . $car_fileds[0] . '">Update</td>';
+        echo '</tr>';
+        }
+    ?>
+</table>

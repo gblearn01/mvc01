@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>My site</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="?page=home" class="<?php echo ($page == 'home'? 'active' : '');?>">Home</a></li>
+                <li><a href="?page=test" class="<?php echo ($page == 'test'? 'active' : '');?>">Test</a></li>
+            </ul>
+        </nav>
+        <section id="main">
+            <?php
+                include $main_content;
+            ?>
+        </section>
+    </div>
+</body>
+</html>
