@@ -59,5 +59,14 @@ switch (get('action')){
         $view = $current_view . 'add.phtml';
         break;
     }
+    case 'doAdd':{
+        // $view = $curd_view_dir.'update.phtml';
+        $new_car = nextID() . ','.get('make') . ',' . get('model') . ','. get('year'). ','.get('price') . PHP_EOL;
+        $cars = file($file);
+        array_push($cars,$new_car);
+        file_put_contents($file,implode('' , $cars));
+        header('location: /?page=cars&action=view');
+        break;
+    }
 }
 
